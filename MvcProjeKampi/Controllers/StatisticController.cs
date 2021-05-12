@@ -29,7 +29,7 @@ namespace MvcProjeKampi.Controllers
             ViewBag.HeadingMax = heading;
 
             var difference = context.Categories.Count(m => m.CategoryStatus == true) - context.Categories.Count(m => m.CategoryStatus == false);
-            ViewBag.StatusFark = difference;
+            ViewBag.StatusDiffrerent = difference;
 
             return View();
         }
