@@ -27,19 +27,17 @@
     <section class="content">
 
         <!-- Default box -->
-        <div class="card card-solid">
-            <div class="card-body pb-0">
+        <div class="card card-solid ">
+            <div class="card-body pb-0 ">
                 <div class="row d-flex align-items-stretch">
                     @foreach (var item in Model)
                     {
-
-
                         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
-                            <div class="card bg-light">
+                            <div class="card bg-light ">
                                 <div class="card-header text-muted border-bottom-0">
-                                    Digital Strategist
+                                    @item.WriterTitle
                                 </div>
-                                <div class="card-body pt-0">
+                                <div class="card-body pt-0 ">
                                     <div class="row">
                                         <div class="col-7">
                                             <h2 class="lead"><b>@item.WriterName @item.WriterSurName</b></h2>
@@ -59,7 +57,7 @@
                                         <a href="#" class="btn btn-sm bg-teal">
                                             <i class="fas fa-comments">Yazarın Başlıkları</i>
                                         </a>
-                                        <a href="#" class="btn btn-sm btn-primary">
+                                        <a href="/Writer/EditWriter/@item.WriterID" class="btn btn-sm btn-primary">
                                             <i class="fas fa-user"></i> Profili Düzenle
                                         </a>
                                     </div>

@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class mig_writer_edit : DbMigration
+    public partial class mig_writertitle_add : DbMigration
     {
         public override void Up()
         {
@@ -73,6 +73,7 @@
                         WriterAbout = c.String(maxLength: 100),
                         WriterMail = c.String(maxLength: 200),
                         WriterPassword = c.String(maxLength: 200),
+                        WriterTitle = c.String(maxLength: 50),
                     })
                 .PrimaryKey(t => t.WriterID);
             
